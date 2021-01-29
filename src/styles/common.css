@@ -1,0 +1,615 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input,
+button,
+select,
+textarea,
+a,
+img {
+  outline: none;
+  background: transparent;
+}
+
+/*去掉超链接或按钮点击时出现的虚线框黄色边框*/
+::-moz-focus-inner {
+  border: 0;
+}
+
+/*火狐的私有属性去掉点击时边框*/
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+blockquote {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+i {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+mark {
+  background: none;
+}
+
+input::-ms-clear {
+  display: none !important;
+}
+
+input,
+textarea {
+  border: 0;
+  font-family: "Microsoft YaHei";
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.clearfloat {
+  zoom: 1;
+}
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: #999999;
+}
+
+textarea {
+  outline: none;
+  resize: none;
+  border: none;
+}
+
+html {
+  /* font-size: calc(100vw / 320 * 16); */
+  font-size: calc(100vw / 375 * 12);
+  margin: 0 auto;
+  color: #626263;
+  overflow: hidden;
+  overflow-y: scroll;
+  /* min-width: 320px;
+  max-width: 414px; */
+}
+
+body {
+  position: relative;
+  /* max-width: 414px;
+  min-width: 320px; */
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 100vh;
+  min-height: 100vh;
+  margin: 0 auto;
+  /* background-color: var(--color_191); */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 65.625%;
+  }
+}
+
+@media (min-width: 360px) {
+  html {
+    font-size: 68.75%;
+  }
+}
+
+@media (min-width: 375px) {
+  html {
+    font-size: 71.875%;
+  }
+}
+
+@media (min-width: 384px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (min-width: 414px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (min-width: 540px) {
+  html {
+    font-size: 84.375%;
+  }
+
+  .pay-section .el-checkbox__inner:after {
+    height: 0.11rem;
+    left: 0.07rem;
+    width: 0.05rem;
+    top: 0.02rem;
+  }
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 81.25%;
+  }
+}
+
+@media (min-width: 640px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (min-width: 720px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 110%;
+  }
+
+  .el-message {
+    padding: 0.2rem 0;
+  }
+}
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.flex1 {
+  flex: 1;
+  -webkit-box-flex: 1;
+}
+
+.slh {
+  /* 显示一行，省略号 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.slh2 {
+  /* 显示两行，省略号 */
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.scroll-x {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.scroll-y {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* 谷歌浏览器隐藏滚动条 */
+.scroll::-webkit-scrollbar,
+.scroll-x::-webkit-scrollbar,
+.scroll-y::-webkit-scrollbar {
+  display: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+/* 火狐浏览器隐藏滚动条 */
+* {
+  scrollbar-width: none;
+}
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.fc {
+  clear: both;
+  overflow: hidden;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.pr {
+  position: relative;
+}
+
+.dn {
+  display: none;
+}
+
+.db {
+  display: block;
+}
+
+.di {
+  display: inline-block;
+}
+
+/* 边框 */
+.b_no {
+  border: none;
+}
+
+.b_fde {
+  border: 1px solid #fde48e;
+}
+
+/* 邀请好友-2020.07.30 */
+.body {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+html {
+  --color_3db: #3cd977;
+  --color_2ac: #2ac665;
+  --color_ffa: #ffae14;
+  --color_ffb: #ffb319;
+  --color_f7a: #f7a546;
+  --color_f7b: #f7bd46;
+  --color_ff9: #ff9201;
+  /* 3.5黄色字体 */
+  --color_f0a: #f0a30a;
+  --color_b3b: #b3b3b3;
+  /* --color_737: #737780; */
+  --color_737: #abaeb3;
+  /* #f5f5f5 购买套餐背景色 */
+  --color_f5f: #f5f5f5;
+  --color_bbb: #bbb;
+  --color_666: #666;
+  --color_4c4: #4c4c4c;
+  --color_2c2: #2c2d39;
+  --color_2c2: #2c2d39;
+  --color_1d2: #1d2837;
+  --color_191: #191a23;
+  --color_161: #161820;
+  --color_162: #16251c;
+  --color_1a1: #1a1a1a;
+  --color_1f2: #1f202a;
+  --color_202: #20202a;
+
+  --color_e22: #e22a21;
+  --color_f00: #ff0000;
+  --color_454: #45474d;
+  --color_07a: #07aaff;
+}
+
+/*
+2020.08.21 17.24 UI设计确认一下色值
+#e22a21   红色
+#fe8809    橙黄色
+#3cd977    绿色
+#2790c4    蓝色
+#7c4802    棕色
+#1a1a1a   黑色
+ */
+
+/* 颜色 */
+.c_000 {
+  color: #000 !important;
+}
+
+.c_1f2 {
+  color: var(--color_1f2) !important;
+}
+
+.c_fff {
+  color: #fff !important;
+}
+
+.c_333 {
+  color: #333 !important;
+}
+
+.c_454 {
+  color: var(--color_454) !important;
+}
+
+.c_666 {
+  color: var(--color_666) !important;
+}
+
+.c_999 {
+  color: #999 !important;
+}
+
+.c_ae0 {
+  color: var(--color_ae0) !important;
+}
+
+.c_f00 {
+  color: var(--color_f00) !important;
+}
+
+.c_3db {
+  color: var(--color_3db) !important;
+}
+
+.c_2ac {
+  color: var(--color_2ac) !important;
+}
+
+.c_fec {
+  color: var(--color_fec) !important;
+}
+
+.c_ffa {
+  color: var(--color_ffa) !important;
+}
+
+.c_ffb {
+  color: var(--color_ffb) !important;
+}
+
+.c_f0a {
+  color: var(--color_f0a) !important;
+}
+
+.c_f7b {
+  color: var(--color_f7b) !important;
+}
+
+.c_8b5 {
+  color: var(--color_8b5) !important;
+}
+
+.c_b3b {
+  color: var(--color_b3b) !important;
+}
+
+.c_b3b {
+  color: var(--color_191) !important;
+}
+
+.c_202 {
+  color: var(--color_202) !important;
+}
+
+.c_161 {
+  color: var(--color_161) !important;
+}
+
+.c_162 {
+  color: var(--color_162) !important;
+}
+
+.c_e22 {
+  color: var(--color_e22) !important;
+}
+
+.c_f56 {
+  color: var(--color_f56) !important;
+}
+
+.c_b22 {
+  color: var(--color_b22) !important;
+}
+
+.c_7c4 {
+  color: var(--color_7c4) !important;
+}
+
+.c_737 {
+  color: var(--color_737) !important;
+}
+
+.c_07a {
+  color: var(--color_07a) !important;
+}
+
+.c_link {
+  color: var(--color_link) !important;
+}
+
+.a {
+  color: #f56c6c;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+/* 字体 */
+.font_8 {
+  font-size: 0.08rem !important;
+}
+
+.font_10 {
+  font-size: 0.1rem !important;
+}
+
+.font_12 {
+  font-size: 0.12rem;
+}
+
+.font_13 {
+  font-size: 0.13rem;
+}
+
+.font_14 {
+  font-size: 0.14rem;
+}
+
+.font_16 {
+  font-size: 0.16rem;
+}
+
+.font_18 {
+  font-size: 0.18rem;
+}
+
+.font_20 {
+  font-size: 0.2rem;
+}
+
+.font_22 {
+  font-size: 0.22rem;
+}
+
+.font_24 {
+  font-size: 0.24rem;
+}
+
+.font_26 {
+  font-size: 0.26rem;
+}
+
+.font_28 {
+  font-size: 0.28rem;
+}
+
+.font_30 {
+  font-size: 0.3rem;
+}
+
+.font_32 {
+  font-size: 0.32rem;
+}
